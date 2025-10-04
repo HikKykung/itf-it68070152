@@ -54,7 +54,50 @@
                                 <div>
                                     <input type="number" id="bal_cash" value="500" min="0">
                                 </div>
-                                <button type="button" onclick="changebal()" style="margin-top: 6px;">Change</button>
+                            </div>
+                            <button type="button" onclick="changebal()" style="margin-top: 6px;">Change</button>
+                        </div>
+                    </div>
+                    <div class="user-content">
+                        <img src="toolbox.png" width="64" alt="Toolbox" />
+                        <div>
+                            <h3 style="margin-top: 0; margin-left: 0;">Bank Operation</h3>
+                            <select id="pro-type">
+                                <option value="deposit">Deposit</option>
+                                <option value="withdraw">Withdraw</option>
+                            </select>
+                            <input type="number" id="pro_amt" value="1" min="1">
+                            <button type="button" onclick="proOperation()" style="margin-top: 6px;">Proceed</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 style="margin-top: 18px;">Financial Tools</h2>
+                    <div class="user-content">
+                        <img src="gold.png" width="64" alt="Gold" />
+                        <div>
+                            <h3 style="margin-top: 0; margin-left: 0;">Currency Converter</h3>
+                            <div class="user-balance">
+                                <div>
+                                    input balacnce:
+                                </div>
+                                <div>
+                                    <input type="number" id="gold_in" value="0" min="0">
+                                </div>
+                                <div>
+                                    Output balance:
+                                </div>
+                                <div>
+                                    <input type="number" id="gold_out" value="0" min="0" disabled>
+                                </div>
+                            </div>
+                            <div>
+                                Input currency:
+                                <section id="gold_intype">
+                                    <option value="deposit">USD</option>
+                                    <option value="withdraw">THB</option>
+                                </section>
+                                <button type="button" onclick="convertbal()" style="margin-top: 6px;">Convert</button>
                             </div>
                         </div>
                     </div>
