@@ -40,7 +40,7 @@ function showBal() {
 }
 
 function addWood(text) {
-    wood.value = (curr_id++ + ", " + text + "\n" + log.value).trim() 
+    wood.value = (curr_id++ + ", " + text + "\n" + wood.value).trim() 
 }
 
 showBal()
