@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITF Lab</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
@@ -13,9 +13,54 @@
         <p>Week 14</p>
     </nav>
     <div class="container">
-        Enter number: <input type="number" id="myinput" value="0">
-        <button onclick="add()">+1</button>
-        <button onclick="de()">-1</button>
+        <div class="img-title">
+            <img src="Study.png" width="96" alt="Study" />
+            <div>
+                <h1>ITF Simple Bank</h1>
+                <p>Welcome to my first HMITL + CSS + JS website!</p>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <div class="textsimple">
+                <textarea id="wood" disabled></textarea>
+            </div>
+            <div class="img-content">
+                <div>
+                    <h2 style="margin-top: 20px;">Account Overview</h2>
+                    <div class="user-content">
+                        <img src="user.png" width="64" alt="You" />
+                        <div>
+                            <h3 style="margin-top: 0; margin-left: 0;">Account Information</h3>
+                            Name: Yossakorn Praharnphap
+                            <br>
+                            Type: Savings Account
+                        </div>
+                    </div>
+                    <div class="user-content">
+                        <img src="graph.png" width="64" alt="Graph" />
+                        <div>
+                            <h3 style="margin-top: 0; margin-left: 0;">Balance Information</h3>
+                            <div class = "user-balance">
+                                <div>
+                                    Current account balance:
+                                </div>
+                                <div>
+                                    <input type="number" id="bal_user" value="1000" min="0">
+                                </div>
+                                <div>
+                                    Current cash balance:
+                                </div>
+                                <div>
+                                    <input type="number" id="bal_cash" value="500" min="0">
+                                </div>
+                                <button type="button" onclick="changebal()" style="margin-top: 6px;">Change</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
