@@ -38,6 +38,7 @@ body{
     display: flex;
     align-items: center;
     margin: 24px 8px;
+    background-color: aqua;
     gap: 18px
 }
 
